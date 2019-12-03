@@ -156,13 +156,13 @@ public class MyGenerator {
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
 //        strategy.setSuperEntityClass("com.ledger.common.core.entity.BaseEntity");
         strategy.setEntityLombokModel(true);
-//        strategy.setRestControllerStyle(true);
+        strategy.setRestControllerStyle(true);
         // 公共父类
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
-//        strategy.setControllerMappingHyphenStyle(true);
+        strategy.setControllerMappingHyphenStyle(true);
         //表名，多个英文逗号分割
         strategy.setInclude("t_sys_user");
         strategy.setTablePrefix( "t_sys_");
