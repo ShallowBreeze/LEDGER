@@ -12,6 +12,7 @@
 
     <modules>
         <module>ledger-common</module>
+        <module>ledger-dao</module>
     </modules>
 
     <parent>
