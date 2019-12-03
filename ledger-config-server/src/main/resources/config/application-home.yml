@@ -1,0 +1,38 @@
+#配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.128.52.48:3306/LEDGER?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: ledger
+    password: 123456
+    druid:
+      validationQuery: SELECT 1
+      # 初始化配置
+      initialSize: 10
+      # 最小连接数
+      minIdle: 3
+      # 最大连接数
+      maxActive: 15
+      # 最大空闲时间
+      minEvictableIdleTimeMillis: 180000
+      testOnBorrow: false
+      testWhileIdle: true
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      logAbandoned: true
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 100
+
+      # 配置监控统计拦截的filters
+      filters: stat
+      stat-view-servlet:
+        url-pattern: /druid/*
+        reset-enable: false
+
+      web-stat-filter:
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+
+logging:
+  file:
+    path: G:\\logs

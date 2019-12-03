@@ -1,0 +1,16 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /ledger-config
+spring:
+  profiles:
+    active: native
+  application:
+    name: ledger-config
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:config/  # 搜索src/main/resource 下的config文件夹下的文件
+  jmx:
+    enabled: false
