@@ -13,6 +13,9 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -44,12 +47,15 @@ public class MyGenerator {
     }
 
     public static void main(String[] args) {
+
+//        Connection connection=getConn();
         Properties properties = new Properties();
         try {
             properties = PropertiesLoaderUtils.loadAllProperties("jdbc.properties");
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
 
@@ -78,7 +84,7 @@ public class MyGenerator {
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setDbType(DbType.MYSQL);
         dsc.setUrl(properties.getProperty("jdbc.url"));
-        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
+        dsc.setDriverName(properties.getProperty("jdbc.driver"));
         // dsc.setSchemaName("public");
 //        dsc.setDriverName(properties.getProperty("jdbc.driver"));
         dsc.setUsername(properties.getProperty("jdbc.username"));
@@ -88,10 +94,10 @@ public class MyGenerator {
 
         //包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("com.ledger");
+        pc.setParent("com.ledger.auto");
 //        pc.setController("controller");
         pc.setService("service");
-        pc.setServiceImpl("serviceImpl");
+        pc.setServiceImpl("service.impl");
         pc.setMapper("mapper");
         pc.setEntity("entity");
         pc.setXml("xml");
@@ -117,18 +123,18 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/src/main/resources/mapper/" + pc.getModuleName()
+                return projectPath + "/ledger-dao/src/main/resources/mapper/auto"
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
-        cfg.setFileCreate(new IFileCreate() {
+/*        cfg.setFileCreate(new IFileCreate() {
             @Override
             public boolean isCreate(ConfigBuilder configBuilder, FileType fileType, String filePath) {
                 // 判断自定义文件夹是否需要创建
                 checkDir("调用默认方法创建的目录");
                 return false;
             }
-        });
+        });*/
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 
@@ -148,7 +154,7 @@ public class MyGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("com.ledger.common.core.entity.BaseEntity");
+//        strategy.setSuperEntityClass("com.ledger.common.core.entity.BaseEntity");
         strategy.setEntityLombokModel(true);
 //        strategy.setRestControllerStyle(true);
         // 公共父类
@@ -157,8 +163,9 @@ public class MyGenerator {
 //        strategy.setSuperEntityColumns("id");
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
 //        strategy.setControllerMappingHyphenStyle(true);
-        strategy.setInclude("sys_user_t");
-        strategy.setTablePrefix(pc.getModuleName() + "_");
+        //表名，多个英文逗号分割
+        strategy.setInclude("t_sys_user");
+        strategy.setTablePrefix( "t_sys_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
