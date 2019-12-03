@@ -1,7 +1,7 @@
 package com.ledger.common.utils;
 
 import cn.hutool.json.JSONObject;
-import me.zhengjie.exception.BadRequestException;
+import com.ledger.common.exception.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetails;
 

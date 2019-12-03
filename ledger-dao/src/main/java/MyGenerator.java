@@ -1,3 +1,4 @@
+import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
@@ -9,9 +10,12 @@ import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.FileType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
+import org.springframework.core.io.support.PropertiesLoaderUtils;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.Scanner;
 
 /**
@@ -40,13 +44,19 @@ public class MyGenerator {
     }
 
     public static void main(String[] args) {
+        Properties properties = new Properties();
+        try {
+            properties = PropertiesLoaderUtils.loadAllProperties("jdbc.properties");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/src/main/java");
+        gc.setOutputDir(projectPath + "/ledger-dao/src/main/java");
         gc.setFileOverride(true);
         gc.setActiveRecord(true);//不需要ActiveRecord特性的请改为false
         gc.setEnableCache(false);//XML二级缓存
@@ -66,12 +76,13 @@ public class MyGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-
-        dsc.setUrl("jdbc:mysql://10.128.52.48:3306/LEDGER?useUnicode=true&characterEncoding=utf8&useSSL=false");
+        dsc.setDbType(DbType.MYSQL);
+        dsc.setUrl(properties.getProperty("jdbc.url"));
+        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         // dsc.setSchemaName("public");
-        dsc.setDriverName(" com.mysql.cj.jdbc.Driver");
-        dsc.setUsername("ledger");
-        dsc.setPassword("123456");
+//        dsc.setDriverName(properties.getProperty("jdbc.driver"));
+        dsc.setUsername(properties.getProperty("jdbc.username"));
+        dsc.setPassword(properties.getProperty("jdbc.password"));
         mpg.setDataSource(dsc);
 
 
@@ -144,8 +155,9 @@ public class MyGenerator {
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
-        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
+//        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
 //        strategy.setControllerMappingHyphenStyle(true);
+        strategy.setInclude("sys_user_t");
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());

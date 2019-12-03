@@ -1,6 +1,7 @@
 package com.ledger.common.core.entity.request;
 
-import com.wms.common.utils.StringUtils;
+
+import com.ledger.common.utils.StringUtils;
 
 import java.util.Map;
 

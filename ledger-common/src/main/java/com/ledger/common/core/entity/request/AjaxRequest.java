@@ -6,14 +6,15 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ledger.common.config.Global;
+import com.ledger.common.utils.AddressUtils;
+import com.ledger.common.utils.DateUtils;
+import com.ledger.common.utils.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.wms.common.config.Global;
-import com.wms.common.utils.AddressUtils;
-import com.wms.common.utils.DateUtils;
+
 import com.ledger.common.utils.IpUtils;
-import com.wms.common.utils.StringUtils;
 
 public class AjaxRequest<T> extends HashMap {
 
