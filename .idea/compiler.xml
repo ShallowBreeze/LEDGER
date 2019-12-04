@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ledger-common" />
+        <module name="ledger-config-server" />
+        <module name="ledger-dao" />
+        <module name="Ledger-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LEDGER" target="1.8" />
+      <module name="ledger-common" target="1.8" />
+      <module name="ledger-config-server" target="1.8" />
+      <module name="ledger-dao" target="1.8" />
+      <module name="Ledger-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Ledger-service" options="-parameters" />
+      <module name="ledger-common" options="-parameters" />
+      <module name="ledger-config-server" options="-parameters" />
+      <module name="ledger-dao" options="-parameters" />
+    </option>
+  </component>
+</project>
