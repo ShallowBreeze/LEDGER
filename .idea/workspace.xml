@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="347081ce-2377-4d2d-adea-1ab1fd96b4d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LEDGER.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java" afterDir="false" />
+    </list>
+    <list id="e3e86558-de67-485d-a226-ee7930d3c82b" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
@@ -235,33 +234,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/ledger-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/http/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/key/UidGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/security/Md5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/spring/SpringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/sql/SqlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/test/java/ledger/common/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ledger-config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/src/main/java/pom/LedgerConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/src/test/java/pom/LedgerConfigServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-dao/ledger-dao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/mapper/UserMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ledger-common/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -293,11 +266,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+            <state relative-caret-position="325">
+              <caret line="214" column="43" lean-forward="true" selection-start-line="214" selection-start-column="43" selection-end-line="214" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -305,12 +278,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
               <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ledger-common/src/test/java/ledger/common/AppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-260" />
           </provider>
         </entry>
       </file>
@@ -345,8 +330,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="355" column="72" selection-start-line="355" selection-start-column="44" selection-end-line="355" selection-end-column="72" />
+            <state relative-caret-position="170">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -756,37 +741,37 @@
             <path>
               <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auto" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
@@ -842,8 +827,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -915,12 +900,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="347081ce-2377-4d2d-adea-1ab1fd96b4d5" name="Default Changelist" comment="" />
+      <changelist id="e3e86558-de67-485d-a226-ee7930d3c82b" name="ignore" comment="" />
       <created>1575258874869</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575258874869</updated>
       <workItem from="1575258877430" duration="13776000" />
-      <workItem from="1575336120778" duration="26750000" />
+      <workItem from="1575336120778" duration="27395000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交，新建common">
       <created>1575342992897</created>
@@ -978,14 +964,22 @@
       <option name="project" value="LOCAL" />
       <updated>1575425566567</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="补充提交">
+      <created>1575425941761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575425941761</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40526000" />
+    <option name="totallyTimeSpent" value="41171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1013,7 +1007,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
@@ -1068,7 +1062,8 @@
     <MESSAGE value="自动生成代码未完成版本" />
     <MESSAGE value="自动生成代码" />
     <MESSAGE value="自动生成代码,单表完成版。" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动生成代码,单表完成版。" />
+    <MESSAGE value="补充提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="补充提交" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1089,23 +1084,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/file/InvalidExtensionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/SecurityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/security/PermissionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1362,13 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="355" column="72" selection-start-line="355" selection-start-column="44" selection-end-line="355" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1458,20 +1429,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="126" column="25" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledger-common/src/test/java/ledger/common/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="214" column="43" lean-forward="true" selection-start-line="214" selection-start-column="43" selection-end-line="214" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

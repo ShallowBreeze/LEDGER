@@ -212,7 +212,7 @@ public class MyGenerator {
         strategy.setControllerMappingHyphenStyle(true);
         //表名，多个英文逗号分割
         strategy.setInclude("t_sys_user");
-        strategy.setTablePrefix( "t_sys_");
+        strategy.setTablePrefix( "t_","_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
