@@ -12,6 +12,7 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -46,9 +47,17 @@ public class MyGenerator {
         throw new MybatisPlusException("请输入正确的" + tip + "！");
     }
 
+    public static void sss(String[] args) {
+        String[] models = {"/ledger-dao","/ledger-service"};
+        for (String model : models) {
+//            shell(model);
+        }
+    }
+
     public static void main(String[] args) {
 
-//        Connection connection=getConn();
+/*        File file = new File(model);
+        String path = file.getAbsolutePath();*/
         Properties properties = new Properties();
         try {
             properties = PropertiesLoaderUtils.loadAllProperties("jdbc.properties");
@@ -62,13 +71,14 @@ public class MyGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/ledger-dao/src/main/java");
+        gc.setOutputDir(projectPath +"/ledger-dao/src/main/java");
         gc.setFileOverride(true);
         gc.setActiveRecord(true);//不需要ActiveRecord特性的请改为false
         gc.setEnableCache(false);//XML二级缓存
         gc.setBaseResultMap(true);//XML ResultMap
         gc.setBaseColumnList(false);//XML columList
         gc.setAuthor("pz");//作者
+        gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
 
         //自定义文件命名，注意%s 会自动填充表实体属性
@@ -95,7 +105,7 @@ public class MyGenerator {
         //包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.ledger.auto");
-//        pc.setController("controller");
+        pc.setController("controller");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
         pc.setMapper("mapper");
@@ -112,14 +122,18 @@ public class MyGenerator {
         };
 
         // 如果模板引擎是 freemarker
-        String templatePath = "/templates/mapper.xml.ftl";
+        String mapperTemplatePath = "/templates/mapper.xml.ftl";
+        //service 和controller放到service模块下
+        String serviceTemplatePath = "/templates/service.java.ftl";
+        String serviceImplTemplatePath = "/templates/serviceImpl.java.ftl";
+        String controllerTemplatePath = "/templates/controller.java.ftl";
         // 如果模板引擎是 velocity
         // String templatePath = "/templates/mapper.xml.vm";
 
         // 自定义输出配置
         List<FileOutConfig> focList = new ArrayList<>();
         // 自定义配置会被优先输出
-        focList.add(new FileOutConfig(templatePath) {
+        focList.add(new FileOutConfig(mapperTemplatePath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
@@ -127,6 +141,34 @@ public class MyGenerator {
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
+
+        focList.add(new FileOutConfig(serviceTemplatePath) {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
+                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service"
+                        + "/" + tableInfo.getEntityName() + "Service" + StringPool.DOT_JAVA;
+            }
+        });
+
+        focList.add(new FileOutConfig(serviceImplTemplatePath) {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
+                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service/impl"
+                        + "/" + tableInfo.getEntityName() + "ServiceImpl" + StringPool.DOT_JAVA;
+            }
+        });
+
+        focList.add(new FileOutConfig(controllerTemplatePath) {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
+                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/controller"
+                        + "/" + tableInfo.getEntityName() + "Controller" + StringPool.DOT_JAVA;
+            }
+        });
+
 /*        cfg.setFileCreate(new IFileCreate() {
             @Override
             public boolean isCreate(ConfigBuilder configBuilder, FileType fileType, String filePath) {

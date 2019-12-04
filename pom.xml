@@ -13,6 +13,7 @@
     <modules>
         <module>ledger-common</module>
         <module>ledger-dao</module>
+        <module>Ledger-service</module>
     </modules>
 
     <parent>
