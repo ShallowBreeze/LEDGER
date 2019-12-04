@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.builder.ConfigBuilder;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
+import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.FileType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
@@ -79,10 +80,11 @@ public class MyGenerator {
         gc.setBaseColumnList(false);//XML columList
         gc.setAuthor("pz");//作者
         gc.setOpen(false);
+        gc.setDateType(DateType.ONLY_DATE);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
 
         //自定义文件命名，注意%s 会自动填充表实体属性
-//        gc.setControllerName("%sController");
+        gc.setControllerName("%sController");
         gc.setServiceName("%sService");
         gc.setServiceImplName("%sServiceImpl");
         gc.setMapperName("%sMapper");
@@ -188,7 +190,10 @@ public class MyGenerator {
         // templateConfig.setEntity("templates/entity2.java");
         // templateConfig.setService();
         // templateConfig.setController();
-
+        //设置为空不自动生成，根据自定义配置生成
+        templateConfig.setController(null);
+        templateConfig.setService(null);
+        templateConfig.setServiceImpl(null);
         templateConfig.setXml(null);
         mpg.setTemplate(templateConfig);
 
