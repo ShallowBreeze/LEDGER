@@ -107,6 +107,7 @@ public class MyGenerator {
         //包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.ledger.auto");
+        pc.setModuleName("sys");
         pc.setController("controller");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
@@ -139,8 +140,8 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-dao/src/main/resources/mapper/auto"
-                        + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
+                return projectPath + "/ledger-dao/src/main/resources/mapper/auto/"+pc.getModuleName()
+                        + "/" + tableInfo.getMapperName() + StringPool.DOT_XML;
             }
         });
 
@@ -148,8 +149,8 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service"
-                        + "/" + tableInfo.getEntityName() + "Service" + StringPool.DOT_JAVA;
+                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service/"+pc.getModuleName()
+                        + "/" + tableInfo.getServiceName() + StringPool.DOT_JAVA;
             }
         });
 
@@ -157,8 +158,8 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service/impl"
-                        + "/" + tableInfo.getEntityName() + "ServiceImpl" + StringPool.DOT_JAVA;
+                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service/"+pc.getModuleName()+"/impl"
+                        + "/" + tableInfo.getServiceImplName()+ StringPool.DOT_JAVA;
             }
         });
 
@@ -166,8 +167,8 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/controller"
-                        + "/" + tableInfo.getEntityName() + "Controller" + StringPool.DOT_JAVA;
+                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/controller/"+pc.getModuleName()
+                        + "/" + tableInfo.getControllerName() + StringPool.DOT_JAVA;
             }
         });
 
@@ -204,15 +205,19 @@ public class MyGenerator {
 //        strategy.setSuperEntityClass("com.ledger.common.core.entity.BaseEntity");
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
+        //Controller驼峰转连字符"-"
+        strategy.setControllerMappingHyphenStyle(false);
+        //是否生成实体时，生成字段注解
+        strategy.setEntityTableFieldAnnotationEnable(true);
         // 公共父类
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
-        strategy.setControllerMappingHyphenStyle(true);
         //表名，多个英文逗号分割
-        strategy.setInclude("t_sys_user");
-        strategy.setTablePrefix( "t_","_");
+       strategy.setInclude(new String[]{"t_sys_dict_detail"});
+//        strategy.setExclude("t_sys_log");
+        strategy.setTablePrefix( "t_sys_","_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
