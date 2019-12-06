@@ -1,18 +1,11 @@
 package com.ledger.common.core.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.TypeReference;
-import com.alibaba.fastjson.parser.ParserConfig;
-import com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer;
-import com.alibaba.fastjson.parser.deserializer.MapDeserializer;
-import com.alibaba.fastjson.parser.deserializer.ObjectDeserializer;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
-import com.google.common.collect.Maps;
-import com.ledger.common.core.entity.request.AjaxRequest;
-import com.ledger.common.core.entity.request.PageRequest;
 import com.ledger.common.core.entity.response.AjaxResult;
 import com.ledger.common.core.entity.response.PageResult;
+import com.ledger.common.core.entity.response.ReturnEntity;
+import com.ledger.common.enums.HttpCodeEnum;
 import com.ledger.common.utils.DateUtils;
 import com.ledger.common.utils.ServletUtils;
 import com.ledger.common.utils.StringUtils;
@@ -27,7 +20,6 @@ import javax.servlet.http.HttpSession;
 import java.beans.PropertyEditorSupport;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @description: base Controller
@@ -37,7 +29,6 @@ import java.util.Map;
 public class BaseController {
     protected final Logger logger = LoggerFactory.getLogger(BaseController.class);
 
-    protected static final String PRO_Q = "q";
 
     /**
      * 将前台传递过来的日期格式的字符串，自动转化为Date类型
@@ -53,19 +44,12 @@ public class BaseController {
         });
     }
 
-    protected void convertWordQ(PageRequest pageRequest, String proName) {
-        //下拉搜索框
-        if (pageRequest.containsKey(PRO_Q)) {
-            pageRequest.put(proName, pageRequest.getString(PRO_Q).toUpperCase().concat("*"));
-        }
-    }
-
 
     /**
      * 获取request
      */
     public HttpServletRequest getRequest() {
-        return ServletUtils.getRequest();
+        return ServletUtils.getHttpServletRequest();
     }
 
     /**
@@ -89,7 +73,7 @@ public class BaseController {
      * @param rows 影响行数
      * @return 操作结果
      */
-    protected <T> AjaxResult<T> toAjax(int rows) {
+    protected ReturnEntity toAjax(int rows) {
         return rows > 0 ? success() : fail();
     }
 
@@ -99,63 +83,63 @@ public class BaseController {
      * @param result 结果
      * @return 操作结果
      */
-    protected <T> AjaxResult<T> toAjax(boolean result) {
+    protected ReturnEntity toAjax(boolean result) {
         return result ? success() : fail();
     }
 
     /**
      * 返回成功
      */
-    protected <T> AjaxResult<T> success() {
+    protected  ReturnEntity success() {
         return AjaxResult.success();
     }
 
     /**
      * 返回成功消息
      */
-    protected <T> AjaxResult<T> success(T t) {
+    protected  ReturnEntity success(Object t) {
         return AjaxResult.success(t);
     }
 
     /**
      * 返回成功消息
      */
-    protected <T> AjaxResult<T> success(T t, String message) {
+    protected ReturnEntity success(Object t, String message) {
         return AjaxResult.success(message, t);
     }
 
     /**
      * 返回成功消息
      */
-    protected <T> AjaxResult<T> success(String message) {
+    protected ReturnEntity success(String message) {
         return AjaxResult.success(message);
     }
 
     /**
      * 返回失败消息
      */
-    protected <T> AjaxResult<T> fail() {
+    protected ReturnEntity fail() {
         return AjaxResult.fail();
     }
 
     /**
      * 返回失败消息
      */
-    protected <T> AjaxResult<T> fail(String message) {
+    protected ReturnEntity fail(String message) {
         return AjaxResult.fail(message);
     }
 
     /**
-     * 返回错误码消息
+     * 自定义返回
      */
-    protected <T> AjaxResult<T> fail(AjaxResult.Type type, String message) {
-        return AjaxResult.fail(type, message);
+    protected ReturnEntity custom(HttpCodeEnum e) {
+        return AjaxResult.custom(e);
     }
 
     /**
      * 返回失败消息
      */
-    protected <T> AjaxResult<T> nologin() {
+    protected ReturnEntity nologin() {
         return AjaxResult.nologin();
     }
 
@@ -166,30 +150,6 @@ public class BaseController {
         return StringUtils.format("redirect:{}", url);
     }
 
-    protected PageRequest pageRequest(Map<String, String> map){
-        return new PageRequest(map);
-    }
-
-    protected PageRequest pageRequest(String text){
-        Map map = JSON.parseObject(text, Map.class);
-        return new PageRequest(map);
-    }
-
-    protected AjaxRequest ajaxRequest(HttpServletRequest request){
-        Map<String, String> map = Maps.newHashMap();
-        request.getParameterMap().forEach((k, v) -> {
-            map.put(k, v[0]);
-        });
-        return new AjaxRequest(map);
-    }
-
-    protected AjaxRequest ajaxRequest(Map<String, String> map){
-        return new AjaxRequest(map);
-    }
-
-    protected <T> AjaxRequest<T> ajaxRequest(T data, Map<String, String> map){
-        return new AjaxRequest<T>(data, map);
-    }
 
     protected <T> PageResult<T> page(List<T> list) {
         return PageResult.create(list);
@@ -211,19 +171,4 @@ public class BaseController {
         return PageResult.createFail(msg);
     }
 
-    protected <T> AjaxRequest<T> ajaxRequest(T t) {
-        return new AjaxRequest<T>(t);
-    }
-
-    protected AjaxRequest ajaxRequest(String req) {
-        Map map = JSON.parseObject(req, Map.class);
-        return new AjaxRequest(map);
-    }
-
-    protected <T> AjaxRequest<T> ajaxRequest(String text, TypeReference<AjaxRequest<T>> type) {
-        ObjectDeserializer od = ParserConfig.getGlobalInstance().getDeserializer(type.getType());
-        if ( od == null || od instanceof MapDeserializer)
-            ParserConfig.getGlobalInstance().putDeserializer(type.getType(), new JavaBeanDeserializer(ParserConfig.getGlobalInstance(), AjaxRequest.class, type.getType()));
-        return (AjaxRequest<T>) JSON.parseObject(text, type);
-    }
 }

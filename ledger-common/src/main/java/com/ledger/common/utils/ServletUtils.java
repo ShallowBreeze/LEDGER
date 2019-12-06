@@ -42,37 +42,37 @@ public class ServletUtils {
 	 * 获取String参数
 	 */
 	public static String getParameter(String name) {
-		return getRequest().getParameter(name);
+		return getHttpServletRequest().getParameter(name);
 	}
 
 	/**
 	 * 获取String参数
 	 */
 	public static String getParameter(String name, String defaultValue) {
-		return Convert.toStr(getRequest().getParameter(name), defaultValue);
+		return Convert.toStr(getHttpServletRequest().getParameter(name), defaultValue);
 	}
 
 	/**
 	 * 获取Integer参数
 	 */
 	public static Integer getParameterToInt(String name) {
-		return Convert.toInt(getRequest().getParameter(name));
+		return Convert.toInt(getHttpServletRequest().getParameter(name));
 	}
 
 	/**
 	 * 获取Integer参数
 	 */
 	public static Integer getParameterToInt(String name, Integer defaultValue) {
-		return Convert.toInt(getRequest().getParameter(name), defaultValue);
+		return Convert.toInt(getHttpServletRequest().getParameter(name), defaultValue);
 	}
 
 	/**
-	 * 获取request
+	 * 获取HttpServletRequest
+	 * @return
 	 */
-	public static HttpServletRequest getRequest() {
-		return getRequestAttributes().getRequest();
+	public static HttpServletRequest getHttpServletRequest() {
+		return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 	}
-
 	/**
 	 * 获取response
 	 */
@@ -84,7 +84,7 @@ public class ServletUtils {
 	 * 获取session
 	 */
 	public static HttpSession getSession() {
-		return getRequest().getSession();
+		return getHttpServletRequest().getSession();
 	}
 
 	public static ServletRequestAttributes getRequestAttributes() {
@@ -163,7 +163,7 @@ public class ServletUtils {
 	 *
 	 */
 	public static boolean isMobile() {
-		HttpServletRequest request = ServletUtils.getRequest();
+		HttpServletRequest request = ServletUtils.getHttpServletRequest();
 		String agent = request.getHeader("User-Agent").toLowerCase();
 		// 匹配 
 		Matcher matcherPhone = phonePat.matcher(agent); 

@@ -2,218 +2,266 @@ package com.ledger.common.core.entity.response;
 
 
 import com.alibaba.fastjson.JSON;
+import com.ledger.common.enums.HttpCodeEnum;
 
 /**
  * 操作消息提醒
  * 
  */
-public class AjaxResult<T> {
-	
-	/**
-	 * 状态类型
-	 */
-	public enum Type {
-		/** 成功 */
-		Success("1", "Success"),
-		/** 错误 */
-		Fail("0", "Fail"),
-		/** 警告 */
-		Warn("3", "Warn"),
-		/** 没有登陆 */
-		NoLogin("5", "NoLogin");
-		
-		private final String code, desc;
-
-		Type(String code, String desc) {
-			this.code = code;
-			this.desc = desc;
-		}
-
-		public String getCode() {
-			return this.code;
-		}
-		
-		public String getDesc() {
-			return this.desc;
-		}
-	}
-
-	/** 状态码 */
-	protected String code;
-
-	/** 返回内容 */
-	protected String msg;
-
-	/** 数据对象 */
-	protected T data;
+public class AjaxResult {
 
 	/**
-	 * 初始化一个新创建的 AjaxResult 对象，使其表示一个空消息。
-	 */
-	public AjaxResult() {
-	}
-
-	/**
-	 * 初始化一个新创建的 AjaxResult 对象
-	 * 
-	 * @param type 状态类型
-	 * @param msg  返回内容
-	 */
-	public AjaxResult(Type type, String msg) {
-		this.code = type.getCode();
-		this.msg = msg;
-	}
-
-	/**
-	 * 初始化一个新创建的 AjaxResult 对象
-	 * 
-	 * @param type 状态类型
-	 * @param msg  返回内容
-	 * @param data 数据对象
-	 */
-	public AjaxResult(Type type, String msg, T data) {
-		this.code = type.getCode();
-		this.msg = msg;
-		this.data = data;
-	}
-
-	/**
-	 * 返回成功消息
-	 * 
-	 * @return 成功消息
-	 */
-	public static <T> AjaxResult<T> success() {
-		return AjaxResult.success(Type.Success.getDesc());
-	}
-
-	/**
-	 * 返回成功消息
-	 * 
-	 * @param msg 返回内容
-	 * @return 成功消息
-	 */
-	public static <T> AjaxResult<T> success(String msg) {
-		return AjaxResult.success(msg, null);
-	}
-	
-	/**
-	 * 返回成功消息
-	 * 
-	 * @param data 数据对象
-	 * @return 成功消息
-	 */
-	public static <T> AjaxResult<T> success(T data) {
-		return new AjaxResult<T>(Type.Success, Type.Success.getDesc(), data);
-	}
-
-	/**
-	 * 返回成功消息
-	 * 
-	 * @param msg  返回内容
-	 * @param data 数据对象
-	 * @return 成功消息
-	 */
-	public static <T> AjaxResult<T> success(String msg, T data) {
-		return new AjaxResult<T>(Type.Success, msg, data);
-	}
-
-	/**
-	 * 返回警告消息
-	 * 
-	 * @param msg 返回内容
-	 * @return 警告消息
-	 */
-	public static <T> AjaxResult<T> warn(String msg) {
-		return AjaxResult.warn(msg, null);
-	}
-
-	/**
-	 * 返回警告消息
-	 * 
-	 * @param msg  返回内容
-	 * @param data 数据对象
-	 * @return 警告消息
-	 */
-	public static <T> AjaxResult<T> warn(String msg, T data) {
-		return new AjaxResult<T>(Type.Warn, msg, data);
-	}
-
-	/**
-	 * 返回错误消息
-	 * 
+	 * 请求成功
 	 * @return
 	 */
-	public static <T> AjaxResult<T> fail() {
-		return AjaxResult.fail(Type.Fail.getDesc());
+	public static ReturnEntity success() {
+		return new ReturnEntity(HttpCodeEnum.OK.getCode(),HttpCodeEnum.OK.getMessage(),null );
 	}
 
 	/**
-	 * 返回错误消息
-	 * 
-	 * @param msg 返回内容
-	 * @return 警告消息
-	 */
-	public static <T> AjaxResult<T> fail(String msg) {
-		return AjaxResult.fail(msg, null);
-	}
-	
-	/**
-	 * 返回错误消息
-	 * 
-	 * @param msg 返回内容
-	 * @return 警告消息
-	 */
-	public static <T> AjaxResult<T> fail(Type type, String msg) {
-		return new AjaxResult<T>(Type.Warn, msg, null);
-	}
-
-	/**
-	 * 返回错误消息
-	 * 
-	 * @param msg  返回内容
-	 * @param data 数据对象
-	 * @return 警告消息
-	 */
-	public static <T> AjaxResult<T> fail(String msg, T data) {
-		return new AjaxResult<T>(Type.Fail, msg, data);
-	}
-	
-	/**
-	 * 返回错误消息
-	 * 
+	 * 成功请求
 	 *
-	 * @return 警告消息
+	 * @param data
+	 * @return
 	 */
-	public static <T> AjaxResult<T> nologin() {
-		return new AjaxResult<T>(Type.NoLogin, "user.not.login");
+	public static ReturnEntity success(Object data) {
+		return new ReturnEntity(HttpCodeEnum.OK.getCode(), HttpCodeEnum.OK.getMessage(),data);
 	}
 
-	public String getCode() {
-		return code;
+	/**
+	 * 成功请求
+	 *
+	 * @param message
+	 * @return
+	 */
+	public static ReturnEntity success(String message) {
+		return new ReturnEntity(HttpCodeEnum.OK.getCode(),message,null);
 	}
 
-	public void setCode(String code) {
-		this.code = code;
+
+	/**
+	 * 成功请求
+	 *
+	 * @param message
+	 * @return
+	 */
+	public static ReturnEntity success(String message, Object data) {
+		return new ReturnEntity(HttpCodeEnum.OK.getCode(), message,data);
 	}
 
-	public String getMsg() {
-		return msg;
+
+	/**
+	 * 操作失败
+	 * @return
+	 */
+	public static ReturnEntity fail() {
+		return new ReturnEntity(HttpCodeEnum.FAIL.getCode(), HttpCodeEnum.FAIL.getMessage());
 	}
 
-	public void setMsg(String msg) {
-		this.msg = msg;
+	/**
+	 * 操作失败
+	 * @return
+	 */
+	public static ReturnEntity fail(String message) {
+		return new ReturnEntity(HttpCodeEnum.FAIL.getCode(),message);
 	}
 
-	public Object getData() {
-		return data;
+	/**
+	 * 服务器错误
+	 * @return
+	 */
+	public static ReturnEntity error() {
+		return new ReturnEntity(HttpCodeEnum.INTERNAL_SERVER_ERROR.getCode(),HttpCodeEnum.INTERNAL_SERVER_ERROR.getMessage());
 	}
 
-	public void setData(T data) {
-		this.data = data;
+
+	/**
+	 * 服务器错误
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity error(Object data) {
+		return new ReturnEntity(HttpCodeEnum.INTERNAL_SERVER_ERROR.getCode(),HttpCodeEnum.INTERNAL_SERVER_ERROR.getMessage(), data);
+	}
+	/**
+	 * 参数错误
+	 * @return
+	 */
+	public static ReturnEntity paramError() {
+		return new ReturnEntity(HttpCodeEnum.INVALID_REQUEST.getCode(), HttpCodeEnum.INVALID_REQUEST.getMessage());
 	}
 
-	@Override
-	public String toString() {
-		return JSON.toJSONString(this);
+	/**
+	 * 参数错误
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity paramError(Object data) {
+		return new ReturnEntity(HttpCodeEnum.INVALID_REQUEST.getCode(), HttpCodeEnum.INVALID_REQUEST.getMessage(), data);
+	}
+
+	/**
+	 * 未登录
+	 * @return
+	 */
+	public static ReturnEntity nologin() {
+		return new ReturnEntity(HttpCodeEnum.NO_LOGIN.getCode(),HttpCodeEnum.NO_LOGIN.getMessage());
+	}
+	/**
+	 * 没有权限
+	 * @return
+	 */
+	public static ReturnEntity unAuthorized() {
+		return new ReturnEntity(HttpCodeEnum.UNAUTHORIZED.getCode(),HttpCodeEnum.UNAUTHORIZED.getMessage());
+	}
+
+	/**
+	 * 没有权限
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity unAuthorized(Object data) {
+		return new ReturnEntity(HttpCodeEnum.UNAUTHORIZED.getCode(),HttpCodeEnum.UNAUTHORIZED.getMessage(),data);
+	}
+
+
+	/**
+	 *  禁止访问
+	 * @return
+	 */
+	public static ReturnEntity forbidden() {
+		return new ReturnEntity(HttpCodeEnum.FORBIDDEN.getCode(),HttpCodeEnum.FORBIDDEN.getMessage());
+	}
+
+	/**
+	 * 禁止访问
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity forbidden(Object data) {
+		return new ReturnEntity(HttpCodeEnum.FORBIDDEN.getCode(),HttpCodeEnum.FORBIDDEN.getMessage(), data);
+	}
+
+
+	/**
+	 * 资源不存在
+	 * @return
+	 */
+	public static ReturnEntity notFound() {
+		return new ReturnEntity(HttpCodeEnum.NOT_FOUND.getCode(),HttpCodeEnum.NOT_FOUND.getMessage());
+	}
+
+
+	/**
+	 * 资源不存在
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity notFound(Object data) {
+		return new ReturnEntity(HttpCodeEnum.NOT_FOUND.getCode(),HttpCodeEnum.NOT_FOUND.getMessage(), data);
+	}
+
+
+	/**
+	 * 请求的格式不正确
+	 * @return
+	 */
+	public static ReturnEntity notAcceptable() {
+		return new ReturnEntity(HttpCodeEnum.NOT_ACCEPTABLE.getCode(),HttpCodeEnum.NOT_ACCEPTABLE.getMessage());
+	}
+
+
+	/**
+	 * 请求的格式不正确
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity notAcceptable(Object data) {
+		return new ReturnEntity(HttpCodeEnum.NOT_ACCEPTABLE.getCode(),HttpCodeEnum.NOT_ACCEPTABLE.getMessage(), data);
+	}
+
+
+	/**
+	 * 数据已经被删除
+	 * @return
+	 */
+	public static ReturnEntity gone() {
+		return new ReturnEntity(HttpCodeEnum.GONE.getCode(),HttpCodeEnum.GONE.getMessage());
+	}
+
+
+	/**
+	 * 数据已经被删除
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity gone(Object data) {
+		return new ReturnEntity(HttpCodeEnum.GONE.getCode(),HttpCodeEnum.GONE.getMessage(), data);
+	}
+
+
+	/**
+	 * 实体参数校验错误
+	 * @return
+	 */
+	public static ReturnEntity unprocesableEntity() {
+		return new ReturnEntity(HttpCodeEnum.UNPROCESABLE_ENTITY.getCode(),HttpCodeEnum.UNPROCESABLE_ENTITY.getMessage());
+	}
+
+
+	/**
+	 * 实体参数校验错误
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity unprocesableEntity(Object data) {
+		return new ReturnEntity(HttpCodeEnum.UNPROCESABLE_ENTITY.getCode(),HttpCodeEnum.UNPROCESABLE_ENTITY.getMessage(), data);
+	}
+
+
+
+	/**
+	 * 未知错误
+	 * @return
+	 */
+	public static ReturnEntity unKnowError() {
+		return new ReturnEntity(HttpCodeEnum.UN_KNOW_ERROR.getCode(),HttpCodeEnum.UN_KNOW_ERROR.getMessage());
+	}
+
+	/**
+	 * 未知错误
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity unKnowError(Object data) {
+		return new ReturnEntity(HttpCodeEnum.UN_KNOW_ERROR.getCode(),HttpCodeEnum.UN_KNOW_ERROR.getMessage(), data);
+	}
+
+
+	/**
+	 * 自定义返回
+	 * @param e
+	 * @return
+	 */
+	public static ReturnEntity custom(HttpCodeEnum e) {
+		return new ReturnEntity(e.getCode(),e.getMessage());
+	}
+	/**
+	 * 自定义返回
+	 * @param error
+	 * @return
+	 */
+	public static ReturnEntity custom(int code,String error) {
+		return new ReturnEntity(code,error);
+	}
+
+	/**
+	 * 自定义返回
+	 * @param error
+	 * @param data
+	 * @return
+	 */
+	public static ReturnEntity custom(int code,String error,Object data) {
+		return new ReturnEntity(code,error,data);
 	}
 }

@@ -1,6 +1,8 @@
 package com.ledger.common.utils;
 
-import org.springframework.util.DigestUtils;
+import org.apache.commons.codec.DecoderException;
+import org.apache.commons.codec.binary.Hex;
+
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
@@ -79,10 +81,22 @@ public class EncryptUtils {
         return new String(retByte);
     }
 
+
     /**
-     * 密码加密
+     * Hex编码.
      */
-    public static String encryptPassword(String password){
-        return  DigestUtils.md5DigestAsHex(password.getBytes());
+    public static String encodeHex(byte[] input) {
+        return new String(Hex.encodeHex(input));
+    }
+
+    /**
+     * Hex解码.
+     */
+    public static byte[] decodeHex(String input) {
+        try {
+            return Hex.decodeHex(input.toCharArray());
+        } catch (DecoderException e) {
+            throw Exceptions.unchecked(e);
+        }
     }
 }

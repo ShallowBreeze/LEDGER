@@ -3,10 +3,11 @@ package com.ledger.common.core.entity.response;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Lists;
+import com.ledger.common.enums.HttpCodeEnum;
 
 import java.util.List;
 
-public class PageResult<T> extends AjaxResult<T> {
+public class PageResult<T> extends ReturnEntity {
 
 	private Long total = 0L;
 	private Long totalPage;
@@ -21,8 +22,8 @@ public class PageResult<T> extends AjaxResult<T> {
 		this.pageSize = (long)page.getPageSize();
 		this.totalPage = (long) Math.ceil((double)this.total / (double)this.pageSize);
 		this.page = (long)page.getPageNum();
-		this.code = Type.Success.getCode();
-		this.msg = Type.Success.getDesc();
+		this.code = HttpCodeEnum.OK.getCode();
+		this.message = HttpCodeEnum.OK.getMessage();
 	}
 	
 	public PageResult(Page<T> page) {
@@ -31,8 +32,8 @@ public class PageResult<T> extends AjaxResult<T> {
 		this.pageSize = (long)page.getPageSize();
 		this.totalPage = (long) Math.ceil((double)this.total / (double)this.pageSize);
 		this.page = (long)page.getPageNum();
-		this.code = Type.Success.getCode();
-		this.msg = Type.Success.getDesc();
+		this.code = HttpCodeEnum.OK.getCode();
+		this.message = HttpCodeEnum.OK.getMessage();
 	}
 	
 	public PageResult(Page<T> page, List<T> list) {
@@ -41,19 +42,19 @@ public class PageResult<T> extends AjaxResult<T> {
 		this.pageSize = (long)page.getPageSize();
 		this.totalPage = (long) Math.ceil((double)this.total / (double)this.pageSize);
 		this.page = (long)page.getPageNum();
-		this.code = Type.Success.getCode();
-		this.msg = Type.Success.getDesc();
+		this.code = HttpCodeEnum.OK.getCode();
+		this.message = HttpCodeEnum.OK.getMessage();
 	}
 	
-	public PageResult(Type type, String msg) {
+	public PageResult(HttpCodeEnum e, String msg) {
 		this.rows = Lists.newArrayList();
-		this.code = type.getCode();
-		this.msg = msg;
+		this.code = e.getCode();
+		this.message = msg;
 	}
 	
 	public PageResult() {
-		this.code = Type.Fail.getCode();
-		this.msg = Type.Fail.getDesc();
+		this.code =HttpCodeEnum.FAIL.getCode();
+		this.message = HttpCodeEnum.FAIL.getMessage();
 	}
 	
 	public List<T> getRows() {
@@ -90,7 +91,7 @@ public class PageResult<T> extends AjaxResult<T> {
 	}
 	
 	public static <T> PageResult<T> createFail(String msg) {
-		return new PageResult<T>(Type.Fail, msg);
+		return new PageResult<T>(HttpCodeEnum.FAIL, msg);
 	}
 
 	public Long getTotalPage() {

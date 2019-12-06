@@ -1,6 +1,6 @@
 package com.ledger.common.utils;
 
-import com.ledger.common.config.Global;
+import com.ledger.common.constant.Global;
 import com.ledger.common.utils.http.HttpUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

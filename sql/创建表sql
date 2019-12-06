@@ -3,8 +3,9 @@
 -- ----------------------------
 DROP TABLE IF EXISTS `t_sys_user`;
 CREATE TABLE `t_sys_user`  (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `user_id` bigint(18) NOT NULL AUTO_INCREMENT COMMENT '用户id',
   `user_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '用户姓名',
+  `login_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '登录名',
   `user_pwd` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '用户密码',
   `status` int(2) NOT NULL DEFAULT 2 COMMENT '用户状态，1:正常，2:冻结',
   `create_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '创建人',

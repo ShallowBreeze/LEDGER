@@ -14,6 +14,7 @@
         <module>ledger-common</module>
         <module>ledger-dao</module>
         <module>Ledger-service</module>
+        <module>ledger-log</module>
     </modules>
 
     <parent>
@@ -36,9 +37,32 @@
         <commons-pool2.version>2.5.0</commons-pool2.version>
         <mapstruct.version>1.2.0.Final</mapstruct.version>
         <mybatis-plus.version>3.2.0</mybatis-plus.version>
+        <shiro.version>1.4.0</shiro.version>
     </properties>
 
     <dependencies>
+        <!--shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-starter</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+            <version>${shiro.version}</version>
+        </dependency>
         <!--Spring boot start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -218,6 +242,8 @@
             <artifactId>UserAgentUtils</artifactId>
             <version>1.20</version>
         </dependency>
+
+        <!--Guava-->
 
         <!-- 分页插件 -->
         <dependency>

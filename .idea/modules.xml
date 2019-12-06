@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/ledger-common/ledger-common.iml" filepath="$PROJECT_DIR$/ledger-common/ledger-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ledger-config-server/ledger-config-server.iml" filepath="$PROJECT_DIR$/ledger-config-server/ledger-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ledger-dao/ledger-dao.iml" filepath="$PROJECT_DIR$/ledger-dao/ledger-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ledger-log/ledger-log.iml" filepath="$PROJECT_DIR$/ledger-log/ledger-log.iml" />
     </modules>
   </component>
 </project>

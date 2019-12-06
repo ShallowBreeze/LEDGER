@@ -12,6 +12,19 @@
   <name>ledger-common</name>
   <description>公共模块</description>
 
+  <properties>
+    <jjwt.version>0.9.1</jjwt.version>
+  </properties>
+
+    <dependencies>
+      <!--jwt-->
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+        <version>${jjwt.version}</version>
+      </dependency>
+    </dependencies>
+
 
 </project>
 

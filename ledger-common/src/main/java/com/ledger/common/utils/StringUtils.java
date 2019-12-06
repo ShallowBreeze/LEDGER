@@ -2,6 +2,7 @@ package com.ledger.common.utils;
 
 import cn.hutool.core.io.resource.ClassPathResource;
 import cn.hutool.core.text.StrFormatter;
+import com.ledger.common.constant.LedgerConstant;
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.UserAgent;
 import com.ledger.common.utils.file.FileUtil;
@@ -18,6 +19,8 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * 字符串工具类, 继承org.apache.commons.lang3.StringUtils类
@@ -450,5 +453,21 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
             result.append(camel.substring(1).toLowerCase());
         }
         return result.toString();
+    }
+    private static Pattern humpPattern = Pattern.compile("[A-Z]");
+
+    /**
+     * 驼峰转下划线
+     * @param str
+     * @return
+     */
+    public static String humpToLine(String str){
+        Matcher matcher = humpPattern.matcher(str);
+        StringBuffer sb = new StringBuffer();
+        while(matcher.find()){
+            matcher.appendReplacement(sb, "_"+matcher.group(0).toLowerCase());
+        }
+        matcher.appendTail(sb);
+        return sb.toString();
     }
 }

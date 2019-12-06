@@ -1,4 +1,5 @@
 import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
@@ -80,14 +81,16 @@ public class MyGenerator {
         gc.setBaseColumnList(false);//XML columList
         gc.setAuthor("pz");//作者
         gc.setOpen(false);
+        //设置日期类型为java.util
         gc.setDateType(DateType.ONLY_DATE);
-        // gc.setSwagger2(true); 实体属性 Swagger2 注解
+//        实体属性 Swagger2 注解
+        gc.setSwagger2(true);
 
         //自定义文件命名，注意%s 会自动填充表实体属性
         gc.setControllerName("%sController");
         gc.setServiceName("%sService");
         gc.setServiceImplName("%sServiceImpl");
-        gc.setMapperName("%sMapper");
+        gc.setMapperName("%sDao");
         gc.setXmlName("%sMapper");
 
         mpg.setGlobalConfig(gc);
@@ -106,12 +109,12 @@ public class MyGenerator {
 
         //包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("com.ledger.auto");
+        pc.setParent("com.ledger");
         pc.setModuleName("sys");
         pc.setController("controller");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
-        pc.setMapper("mapper");
+        pc.setMapper("dao");
         pc.setEntity("entity");
         pc.setXml("xml");
         mpg.setPackageInfo(pc);
@@ -140,16 +143,17 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-dao/src/main/resources/mapper/auto/"+pc.getModuleName()
-                        + "/" + tableInfo.getMapperName() + StringPool.DOT_XML;
+                return projectPath + "/ledger-dao/src/main/resources/mapper/"+pc.getModuleName()
+                        + "/" + tableInfo.getXmlName() + StringPool.DOT_XML;
+    /*            return projectPath + "/ledger-log/src/main/resources/mapper"
+                        + "/" + tableInfo.getXmlName()+ StringPool.DOT_XML;*/
             }
         });
-
         focList.add(new FileOutConfig(serviceTemplatePath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service/"+pc.getModuleName()
+                return projectPath + "/ledger-service/src/main/java/com/ledger/service/"+pc.getModuleName()
                         + "/" + tableInfo.getServiceName() + StringPool.DOT_JAVA;
             }
         });
@@ -158,7 +162,7 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/service/"+pc.getModuleName()+"/impl"
+                return projectPath + "/ledger-service/src/main/java/com/ledger/service/"+pc.getModuleName()+"/impl"
                         + "/" + tableInfo.getServiceImplName()+ StringPool.DOT_JAVA;
             }
         });
@@ -167,7 +171,7 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/auto/controller/"+pc.getModuleName()
+                return projectPath + "/ledger-service/src/main/java/com/ledger/controller/"+pc.getModuleName()
                         + "/" + tableInfo.getControllerName() + StringPool.DOT_JAVA;
             }
         });
@@ -188,7 +192,7 @@ public class MyGenerator {
 
         // 配置自定义输出模板
         //指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
-        // templateConfig.setEntity("templates/entity2.java");
+         templateConfig.setEntity("templates/entity.java");
         // templateConfig.setService();
         // templateConfig.setController();
         //设置为空不自动生成，根据自定义配置生成
@@ -209,14 +213,16 @@ public class MyGenerator {
         strategy.setControllerMappingHyphenStyle(false);
         //是否生成实体时，生成字段注解
         strategy.setEntityTableFieldAnnotationEnable(true);
+        //实体类为Build模型
+//        strategy.setEntityBuilderModel(true);
         // 公共父类
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
         //表名，多个英文逗号分割
-       strategy.setInclude(new String[]{"t_sys_dict_detail"});
-//        strategy.setExclude("t_sys_log");
+//       strategy.setInclude(new String[]{"t_sys_log"});
+        strategy.setExclude("t_sys_log");
         strategy.setTablePrefix( "t_sys_","_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
