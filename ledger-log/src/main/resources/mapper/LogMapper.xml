@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ledger.dao.LogDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ledger.entity.Log">
+        <id column="log_id" property="logId" />
+        <result column="remark" property="remark" />
+        <result column="type" property="type" />
+        <result column="tag" property="tag" />
+        <result column="src" property="src" />
+        <result column="ip" property="ip" />
+        <result column="msg" property="msg" />
+        <result column="params" property="params" />
+        <result column="login_name" property="loginName" />
+        <result column="name" property="name" />
+        <result column="use_time" property="useTime" />
+        <result column="create_name" property="createName" />
+        <result column="update_name" property="updateName" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_delete" property="isDelete" />
+    </resultMap>
+
+</mapper>
