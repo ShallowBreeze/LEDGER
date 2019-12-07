@@ -1,8 +1,8 @@
-package com.ledger.sys.service.impl;
+package com.ledger.service.sys.impl;
 
-import com.ledger.sys.entity.User;
-import com.ledger.sys.dao.UserDao;
-import com.ledger.sys.service.UserService;
+import com.ledger.entity.User;
+import com.ledger.dao.UserDao;
+import com.ledger.service.sys.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserService {

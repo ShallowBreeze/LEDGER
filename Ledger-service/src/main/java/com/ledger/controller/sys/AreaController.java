@@ -1,4 +1,4 @@
-package com.ledger.sys.controller;
+package com.ledger.controller.sys;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 @RestController
 @RequestMapping("/sys/area")

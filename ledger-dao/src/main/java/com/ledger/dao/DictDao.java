@@ -1,6 +1,6 @@
-package com.ledger.sys.dao;
+package com.ledger.dao;
 
-import com.ledger.sys.entity.Dict;
+import com.ledger.entity.Dict;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 public interface DictDao extends BaseMapper<Dict> {
 

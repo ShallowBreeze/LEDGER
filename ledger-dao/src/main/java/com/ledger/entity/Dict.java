@@ -1,4 +1,4 @@
-package com.ledger.sys.entity;
+package com.ledger.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -16,41 +16,32 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 系统配置参数t_sys_config
+ * 系统字典表t_sys_dict
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @Builder(toBuilder = true)
-@TableName("t_sys_config")
-@ApiModel(value="Config对象", description="系统配置参数t_sys_config")
-public class Config extends Model<Config> {
+@TableName("t_sys_dict")
+@ApiModel(value="Dict对象", description="系统字典表t_sys_dict")
+public class Dict extends Model<Dict> {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "参数id")
-    @TableId(value = "config_id", type = IdType.AUTO)
-    private Long configId;
+    @TableId(value = "dict_id", type = IdType.AUTO)
+    private Long dictId;
 
-    @ApiModelProperty(value = "备注信息")
+    @ApiModelProperty(value = "字典名称")
+    @TableField("name")
+    private String name;
+
+    @ApiModelProperty(value = "描述")
     @TableField("remark")
     private String remark;
-
-    @ApiModelProperty(value = "key")
-    @TableField("jkey")
-    private String jkey;
-
-    @ApiModelProperty(value = "value")
-    @TableField("jvalue")
-    private String jvalue;
-
-    @ApiModelProperty(value = "排序")
-    @TableField("sort")
-    private Integer sort;
 
     @ApiModelProperty(value = "创建人")
     @TableField("create_name")
@@ -75,7 +66,7 @@ public class Config extends Model<Config> {
 
     @Override
     protected Serializable pkVal() {
-        return this.configId;
+        return this.dictId;
     }
 
 }

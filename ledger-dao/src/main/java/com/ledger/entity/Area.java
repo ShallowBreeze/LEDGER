@@ -1,4 +1,4 @@
-package com.ledger.sys.entity;
+package com.ledger.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -18,7 +18,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

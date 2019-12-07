@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ledger.sys.dao.DictDetailDao">
+<mapper namespace="com.ledger.dao.DictDetailDao">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.ledger.sys.entity.DictDetail">
+    <resultMap id="BaseResultMap" type="com.ledger.entity.DictDetail">
         <id column="dict_detail_id" property="dictDetailId" />
         <result column="label" property="label" />
         <result column="value" property="value" />

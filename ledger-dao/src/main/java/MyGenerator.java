@@ -58,6 +58,7 @@ public class MyGenerator {
 
     public static void main(String[] args) {
 
+
 /*        File file = new File(model);
         String path = file.getAbsolutePath();*/
         Properties properties = new Properties();
@@ -110,10 +111,10 @@ public class MyGenerator {
         //包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.ledger");
-        pc.setModuleName("sys");
-        pc.setController("controller");
-        pc.setService("service");
-        pc.setServiceImpl("service.impl");
+//        pc.setModuleName("sys");
+        pc.setController("controller.sys");
+        pc.setService("service.sys");
+        pc.setServiceImpl("service.sys.impl");
         pc.setMapper("dao");
         pc.setEntity("entity");
         pc.setXml("xml");
@@ -132,7 +133,7 @@ public class MyGenerator {
         //service 和controller放到service模块下
         String serviceTemplatePath = "/templates/service.java.ftl";
         String serviceImplTemplatePath = "/templates/serviceImpl.java.ftl";
-        String controllerTemplatePath = "/templates/controller.java.ftl";
+        String controllerTemplatePath = "templates/controller2.java.ftl";
         // 如果模板引擎是 velocity
         // String templatePath = "/templates/mapper.xml.vm";
 
@@ -143,7 +144,7 @@ public class MyGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-dao/src/main/resources/mapper/"+pc.getModuleName()
+                return projectPath + "/ledger-dao/src/main/resources/mapper/"+"sys"
                         + "/" + tableInfo.getXmlName() + StringPool.DOT_XML;
     /*            return projectPath + "/ledger-log/src/main/resources/mapper"
                         + "/" + tableInfo.getXmlName()+ StringPool.DOT_XML;*/
@@ -152,8 +153,9 @@ public class MyGenerator {
         focList.add(new FileOutConfig(serviceTemplatePath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
+                String a=pc.getService().replace(".","/");
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/service/"+pc.getModuleName()
+                return projectPath + "/ledger-service/src/main/java/com/ledger/"+a
                         + "/" + tableInfo.getServiceName() + StringPool.DOT_JAVA;
             }
         });
@@ -161,8 +163,9 @@ public class MyGenerator {
         focList.add(new FileOutConfig(serviceImplTemplatePath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
+                String a =pc.getServiceImpl().replace(".","/");
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/service/"+pc.getModuleName()+"/impl"
+                return projectPath + "/ledger-service/src/main/java/com/ledger/"+a
                         + "/" + tableInfo.getServiceImplName()+ StringPool.DOT_JAVA;
             }
         });
@@ -170,8 +173,9 @@ public class MyGenerator {
         focList.add(new FileOutConfig(controllerTemplatePath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
+                String a=pc.getController().replace(".","/");
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/ledger-service/src/main/java/com/ledger/controller/"+pc.getModuleName()
+                return projectPath + "/ledger-service/src/main/java/com/ledger/"+a
                         + "/" + tableInfo.getControllerName() + StringPool.DOT_JAVA;
             }
         });
@@ -194,7 +198,7 @@ public class MyGenerator {
         //指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
          templateConfig.setEntity("templates/entity.java");
         // templateConfig.setService();
-        // templateConfig.setController();
+         templateConfig.setController("templates/controller2.java");
         //设置为空不自动生成，根据自定义配置生成
         templateConfig.setController(null);
         templateConfig.setService(null);

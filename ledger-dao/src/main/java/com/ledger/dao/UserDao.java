@@ -1,6 +1,6 @@
-package com.ledger.sys.dao;
+package com.ledger.dao;
 
-import com.ledger.sys.entity.User;
+import com.ledger.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 public interface UserDao extends BaseMapper<User> {
 

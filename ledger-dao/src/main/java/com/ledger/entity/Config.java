@@ -1,4 +1,4 @@
-package com.ledger.sys.entity;
+package com.ledger.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -16,41 +16,41 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 用户表
+ * 系统配置参数t_sys_config
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @Builder(toBuilder = true)
-@TableName("t_sys_user")
-@ApiModel(value="User对象", description="用户表")
-public class User extends Model<User> {
+@TableName("t_sys_config")
+@ApiModel(value="Config对象", description="系统配置参数t_sys_config")
+public class Config extends Model<Config> {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "用户id")
-    @TableId(value = "user_id", type = IdType.AUTO)
-    private Long userId;
+    @ApiModelProperty(value = "参数id")
+    @TableId(value = "config_id", type = IdType.AUTO)
+    private Long configId;
 
-    @ApiModelProperty(value = "用户姓名")
-    @TableField("user_name")
-    private String userName;
+    @ApiModelProperty(value = "备注信息")
+    @TableField("remark")
+    private String remark;
 
-    @ApiModelProperty(value = "登录名")
-    @TableField("login_name")
-    private String loginName;
+    @ApiModelProperty(value = "key")
+    @TableField("jkey")
+    private String jkey;
 
-    @ApiModelProperty(value = "用户密码")
-    @TableField("user_pwd")
-    private String userPwd;
+    @ApiModelProperty(value = "value")
+    @TableField("jvalue")
+    private String jvalue;
 
-    @ApiModelProperty(value = "用户状态，1:正常，2:冻结")
-    @TableField("status")
-    private Integer status;
+    @ApiModelProperty(value = "排序")
+    @TableField("sort")
+    private Integer sort;
 
     @ApiModelProperty(value = "创建人")
     @TableField("create_name")
@@ -75,7 +75,7 @@ public class User extends Model<User> {
 
     @Override
     protected Serializable pkVal() {
-        return this.userId;
+        return this.configId;
     }
 
 }

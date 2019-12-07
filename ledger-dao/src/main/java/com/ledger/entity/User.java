@@ -1,4 +1,4 @@
-package com.ledger.sys.entity;
+package com.ledger.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -16,32 +16,41 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 系统字典表t_sys_dict
+ * 用户表
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @Builder(toBuilder = true)
-@TableName("t_sys_dict")
-@ApiModel(value="Dict对象", description="系统字典表t_sys_dict")
-public class Dict extends Model<Dict> {
+@TableName("t_sys_user")
+@ApiModel(value="User对象", description="用户表")
+public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "dict_id", type = IdType.AUTO)
-    private Long dictId;
+    @ApiModelProperty(value = "用户id")
+    @TableId(value = "user_id", type = IdType.AUTO)
+    private Long userId;
 
-    @ApiModelProperty(value = "字典名称")
-    @TableField("name")
-    private String name;
+    @ApiModelProperty(value = "用户姓名")
+    @TableField("user_name")
+    private String userName;
 
-    @ApiModelProperty(value = "描述")
-    @TableField("remark")
-    private String remark;
+    @ApiModelProperty(value = "登录名")
+    @TableField("login_name")
+    private String loginName;
+
+    @ApiModelProperty(value = "用户密码")
+    @TableField("user_pwd")
+    private String userPwd;
+
+    @ApiModelProperty(value = "用户状态，1:正常，2:冻结")
+    @TableField("status")
+    private Integer status;
 
     @ApiModelProperty(value = "创建人")
     @TableField("create_name")
@@ -66,7 +75,7 @@ public class Dict extends Model<Dict> {
 
     @Override
     protected Serializable pkVal() {
-        return this.dictId;
+        return this.userId;
     }
 
 }

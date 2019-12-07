@@ -2,11 +2,10 @@ package com.ledger.config.shiro;
 
 import com.ledger.common.constant.Setting;
 import com.ledger.common.shiro.ShiroUser;
-import com.ledger.common.shiro.SysUser;
 import com.ledger.common.utils.EncryptUtils;
 import com.ledger.common.utils.SpringContextHolder;
+import com.ledger.entity.User;
 import com.ledger.service.sys.UserService;
-import com.ledger.sys.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;

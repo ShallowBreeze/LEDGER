@@ -1,6 +1,6 @@
-package com.ledger.sys.service;
+package com.ledger.service.sys;
 
-import com.ledger.sys.entity.User;
+import com.ledger.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author pz
- * @since 2019-12-06
+ * @since 2019-12-07
  */
 public interface UserService extends IService<User> {
 
