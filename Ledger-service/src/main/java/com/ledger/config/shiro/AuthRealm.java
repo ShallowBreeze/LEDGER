@@ -48,8 +48,7 @@ public class AuthRealm extends AuthorizingRealm {
             log.info("[AuthRealm#doGetAuthenticationInfo] --> {} login", user.getUserName());
 
             byte[] salt = EncryptUtils.decodeHex(user.getUserPwd().substring(0, 16));
-            //todo 修改Long类型
-            return new SimpleAuthenticationInfo(new ShiroUser(user.getUserId().longValue(),loginName, user.getUserName()),
+            return new SimpleAuthenticationInfo(new ShiroUser(user.getUserId(),loginName, user.getUserName()),
                     user.getUserPwd().substring(16), ByteSource.Util.bytes(salt),
                     getName());
         } else {

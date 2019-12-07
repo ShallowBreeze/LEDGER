@@ -3,7 +3,7 @@ package com.ledger.service.sys.impl;
 import com.ledger.entity.Area;
 import com.ledger.dao.AreaDao;
 import com.ledger.service.sys.AreaService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ledger.common.core.service.impl.BaseService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2019-12-07
  */
 @Service
-public class AreaServiceImpl extends ServiceImpl<AreaDao, Area> implements AreaService {
+public class AreaServiceImpl extends BaseService<AreaDao, Area> implements AreaService {
 
 }

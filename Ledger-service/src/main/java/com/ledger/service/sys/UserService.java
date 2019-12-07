@@ -1,7 +1,7 @@
 package com.ledger.service.sys;
 
 import com.ledger.entity.User;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.ledger.common.core.service.IBaseService;
 
 /**
  * <p>
@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author pz
  * @since 2019-12-07
  */
-public interface UserService extends IService<User> {
+public interface UserService extends IBaseService<User> {
 
+    User getByLoginName(String loginName);
 }

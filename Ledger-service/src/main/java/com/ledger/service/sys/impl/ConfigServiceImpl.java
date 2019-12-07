@@ -3,7 +3,7 @@ package com.ledger.service.sys.impl;
 import com.ledger.entity.Config;
 import com.ledger.dao.ConfigDao;
 import com.ledger.service.sys.ConfigService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ledger.common.core.service.impl.BaseService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2019-12-07
  */
 @Service
-public class ConfigServiceImpl extends ServiceImpl<ConfigDao, Config> implements ConfigService {
+public class ConfigServiceImpl extends BaseService<ConfigDao, Config> implements ConfigService {
 
 }

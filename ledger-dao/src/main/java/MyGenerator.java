@@ -221,6 +221,8 @@ public class MyGenerator {
 //        strategy.setEntityBuilderModel(true);
         // 公共父类
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
+        strategy.setSuperServiceClass("com.ledger.common.core.service.IBaseService");
+        strategy.setSuperServiceImplClass("com.ledger.common.core.service.impl.BaseService");
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));

@@ -1,7 +1,7 @@
 package com.ledger.service.sys;
 
 import com.ledger.entity.DictDetail;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.ledger.common.core.service.IBaseService;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author pz
  * @since 2019-12-07
  */
-public interface DictDetailService extends IService<DictDetail> {
+public interface DictDetailService extends IBaseService<DictDetail> {
 
 }

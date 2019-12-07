@@ -3,7 +3,7 @@ package com.ledger.service.sys.impl;
 import com.ledger.entity.Dict;
 import com.ledger.dao.DictDao;
 import com.ledger.service.sys.DictService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ledger.common.core.service.impl.BaseService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2019-12-07
  */
 @Service
-public class DictServiceImpl extends ServiceImpl<DictDao, Dict> implements DictService {
+public class DictServiceImpl extends BaseService<DictDao, Dict> implements DictService {
 
 }
