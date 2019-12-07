@@ -9,11 +9,12 @@
         <module name="ledger-common" />
         <module name="ledger-config-server" />
         <module name="ledger-log" />
-        <module name="ledger-dao" />
         <module name="Ledger-service" />
+        <module name="ledger-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ledger" target="1.8" />
       <module name="LEDGER" target="1.8" />
       <module name="ledger-common" target="1.8" />
       <module name="ledger-config-server" target="1.8" />

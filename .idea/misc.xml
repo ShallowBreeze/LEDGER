@@ -7,11 +7,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ledger-common/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ledger-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/ledger-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/ledger-log/pom.xml" />
+        <option value="$PROJECT_DIR$/Ledger-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
