@@ -1,5 +1,6 @@
 package com.ledger.service.impl;
 
+import com.ledger.common.core.service.impl.BaseService;
 import com.ledger.entity.Log;
 import com.ledger.dao.LogDao;
 import com.ledger.service.LogService;
@@ -15,6 +16,6 @@ import org.springframework.stereotype.Service;
  * @since 2019-12-05
  */
 @Service
-public class LogServiceImpl extends ServiceImpl<LogDao, Log> implements LogService {
+public class LogServiceImpl extends BaseService<LogDao, Log> implements LogService {
 
 }

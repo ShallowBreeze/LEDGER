@@ -2,7 +2,10 @@ package com.ledger.common.core.entity.response;
 
 
 import com.alibaba.fastjson.JSON;
+import com.ledger.common.core.entity.DataTable;
 import com.ledger.common.enums.HttpCodeEnum;
+import lombok.Builder;
+import org.apache.poi.ss.formula.functions.T;
 
 /**
  * 操作消息提醒
@@ -27,7 +30,6 @@ public class AjaxResult {
 	public static ReturnEntity success(Object data) {
 		return new ReturnEntity(HttpCodeEnum.OK.getCode(), HttpCodeEnum.OK.getMessage(),data);
 	}
-
 	/**
 	 * 成功请求
 	 *

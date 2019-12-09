@@ -1,7 +1,7 @@
 package com.ledger.service;
 
+import com.ledger.common.core.service.IBaseService;
 import com.ledger.entity.Log;
-import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author pz
  * @since 2019-12-05
  */
-public interface LogService extends IService<Log> {
+public interface LogService extends IBaseService<Log> {
 
 }

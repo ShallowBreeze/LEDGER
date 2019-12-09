@@ -129,4 +129,8 @@ public class Log extends Model<Log> {
         return this.logId;
     }
 
+    public Log(String type){
+        this.type = type;
+    }
+
 }

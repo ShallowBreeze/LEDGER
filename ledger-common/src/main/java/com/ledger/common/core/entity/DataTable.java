@@ -1,5 +1,8 @@
 package com.ledger.common.core.entity;
 
+import com.ledger.common.core.entity.response.ReturnEntity;
+import com.ledger.common.enums.HttpCodeEnum;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +11,11 @@ import java.util.Map;
 /**
 
  */
-public class DataTable<T> implements Serializable {
+public class DataTable<T> extends ReturnEntity implements Serializable {
     private static final long serialVersionUID = 2252240868205663450L;
 
 
-    private int total;
+    private long total = 0L;
     /**
      * 搜索条件
      */
@@ -31,12 +34,17 @@ public class DataTable<T> implements Serializable {
     /**
      * 当前页码
      */
-    private int pageNumber;
+    private int pageNumber = 1;
 
     /**
      * 页码大小
      */
-    private int pageSize;
+    private int pageSize = 20;
+
+    public DataTable() {
+        this.code = HttpCodeEnum.OK.getCode();
+        this.message = HttpCodeEnum.OK.getMessage();
+    }
 
 
     public int getPageNumber() {
@@ -55,11 +63,11 @@ public class DataTable<T> implements Serializable {
         this.pageSize = pageSize;
     }
 
-    public int getTotal() {
+    public long getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(long total) {
         this.total = total;
     }
 

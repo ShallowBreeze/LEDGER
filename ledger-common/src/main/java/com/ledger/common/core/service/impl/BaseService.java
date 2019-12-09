@@ -97,13 +97,17 @@ public class BaseService<M extends BaseMapper<T>, T> extends ServiceImpl<M, T> i
      */
     @Override
     public DataTable<T> pageSearch(DataTable<T> dt) {
+        DataTable<T> dataTable= new DataTable<>();
         Page<T> page = new Page<>(dt.getPageNumber(), dt.getPageSize());
         QueryWrapper wrapper = Wrappers.query();
         loadSearchParam(dt.getSearchParams(), wrapper);
         loadSort(dt.getSorts(), wrapper);
         page(page, wrapper);
-        dt.setTotal((int) page.getTotal());
-        dt.setRows(page.getRecords());
-        return dt;
+        dataTable.setSorts(dt.getSorts());
+        dataTable.setPageNumber(dt.getPageNumber());
+        dataTable.setPageSize(dt.getPageSize());
+        dataTable.setTotal((int) page.getTotal());
+        dataTable.setRows(page.getRecords());
+        return dataTable;
     }
 }

@@ -6,6 +6,7 @@ import com.ledger.annotation.SLog;
 import com.ledger.common.shiro.ShiroUser;
 import com.ledger.common.shiro.SysUser;
 import com.ledger.common.utils.SpringContextHolder;
+import com.ledger.common.utils.StringUtils;
 import com.ledger.dao.LogDao;
 import com.ledger.entity.Log;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -29,16 +30,18 @@ public class SaveLogTask implements Runnable {
     private ProceedingJoinPoint joinPoint;
     private long time;
     private String ip;
+    private Log log;
 
-    public SaveLogTask(ProceedingJoinPoint point, long time, String ip) {
+    public SaveLogTask(ProceedingJoinPoint point, long time, String ip, Log log) {
         this.joinPoint = point;
         this.time = time;
         this.ip = ip;
+        this.log =log;
     }
 
     @Override
     public void run() {
-        saveLog(joinPoint, time, ip);
+        saveLog(joinPoint, time, ip,log);
     }
 
 /**
@@ -48,14 +51,13 @@ public class SaveLogTask implements Runnable {
 * @Author: pengzhen@cmhit.com
 * @Date: 2019/12/5
 */
-    private void saveLog(ProceedingJoinPoint joinPoint, long time, String ip) {
+    private void saveLog(ProceedingJoinPoint joinPoint, long time, String ip,Log log) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
 
-        Log log = new Log();
         SLog sLog =method.getAnnotation(SLog.class);
 
-        if (log != null) {
+        if (StringUtils.isNotEmpty(log.getMsg())) {
             // 注解上的描述
             log.setMsg(sLog.value());
         }
