@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/LEDGER.iml" filepath="$PROJECT_DIR$/.idea/LEDGER.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ledger-service/Ledger-service.iml" filepath="$PROJECT_DIR$/Ledger-service/Ledger-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ledger.iml" filepath="$PROJECT_DIR$/ledger.iml" />
       <module fileurl="file://$PROJECT_DIR$/ledger-common/ledger-common.iml" filepath="$PROJECT_DIR$/ledger-common/ledger-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ledger-config-server/ledger-config-server.iml" filepath="$PROJECT_DIR$/ledger-config-server/ledger-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ledger-dao/ledger-dao.iml" filepath="$PROJECT_DIR$/ledger-dao/ledger-dao.iml" />

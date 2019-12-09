@@ -2,363 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="347081ce-2377-4d2d-adea-1ab1fd96b4d5" name="Default Changelist" comment="新增几个系统关键表">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_boot_starter_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/AuthRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/CacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/RedisCacheManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/ShiroConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/annotation/AnonymousAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/SearchParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/DataTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/ReturnEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/IBaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/impl/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/enums/HttpCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/jwt/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/jwt/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/ShiroUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/Exceptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-dao/src/main/resources/templates/entity.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-log/ledger-log.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-log/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/annotation/SLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/aspect/SLogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/aspect/SaveLogTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/LEDGER.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LEDGER.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_boot_starter_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ledger-service/Ledger-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ledger-service/Ledger-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Ledger-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/sys/AreaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/sys/ConfigController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/sys/DictController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/sys/DictDetailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/controller/sys/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/AreaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/ConfigService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/DictDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/DictService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/impl/AreaServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/impl/ConfigServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/impl/DictDetailServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/impl/DictServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/auto/service/sys/impl/UserServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ledger-common/ledger-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/ledger-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/config/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/request/AjaxRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/request/PageRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/AjaxResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/AjaxResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/AddressUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/AddressUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/EncryptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/EncryptUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/LedgerConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/LedgerConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/ServletUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/ServletUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/META-INF/ledger-common.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/annotation/AnonymousAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/Global.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/LedgerConstant$Url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/LedgerConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/SearchParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/Setting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/SettingsConstants$AppInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/SettingsConstants$DelFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/constant/SettingsConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/controller/BaseController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/entity/BaseEntity$Update.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/entity/DataTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/entity/response/AjaxResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/entity/response/PageResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/entity/response/ReturnEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/service/IBaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/core/service/impl/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/enums/HttpCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/BadRequestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/EntityExistException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/EntityNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/file/InvalidExtensionException$InvalidFlashExtensionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/file/InvalidExtensionException$InvalidImageExtensionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/file/InvalidExtensionException$InvalidMediaExtensionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/file/InvalidExtensionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/handler/ApiError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/exception/handler/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/filter/AuthFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/jwt/JwtProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/jwt/JwtTokenUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/shiro/ShiroUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/shiro/SysUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/AddressUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/ConverterUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/EncryptUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/Exceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/IpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/RequestHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/SecurityUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/ServletUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/SpringContextHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/StringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/ThrowableUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/TranslatorUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/ValidationUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/file/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/http/HttpUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/http/HttpUtils$TrustAnyHostnameVerifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/http/HttpUtils$TrustAnyTrustManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/http/HttpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/key/UidGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/page/PageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/page/Paginable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/page/Pagination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/page/SimplePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/security/Md5Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/spring/SpringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/utils/sql/SqlUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/xss/XssFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/classes/com/ledger/common/xss/XssHttpServletRequestWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-common/target/test-classes/ledger/common/AppTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ledger-dao/ledger-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/ledger-dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/entity/Area.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/entity/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/entity/Dict.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/entity/DictDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/mapper/AreaMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/mapper/ConfigMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/mapper/DictDetailMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/mapper/DictMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/auto/sys/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/resources/mapper/auto/sys/AreaMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/resources/mapper/auto/sys/ConfigMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/resources/mapper/auto/sys/DictDetailMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/resources/mapper/auto/sys/DictMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/src/main/resources/mapper/auto/sys/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/entity/Area.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/entity/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/entity/Dict.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/entity/DictDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/mapper/AreaMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/mapper/ConfigMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/mapper/DictDetailMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/mapper/DictMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/auto/sys/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/auto/sys/AreaMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/auto/sys/ConfigMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/auto/sys/DictDetailMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/auto/sys/DictMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/auto/sys/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/创建表sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/创建表sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/META-INF/ledger-dao.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/MyGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/dao/AreaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/dao/ConfigDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/dao/DictDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/dao/DictDetailDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/Area$AreaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/Config$ConfigBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/Dict$DictBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/Dict.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/DictDetail$DictDetailBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/DictDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/com/ledger/sys/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/sys/AreaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/sys/ConfigMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/sys/DictDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/sys/DictMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/mapper/sys/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-dao/target/classes/templates/entity.java.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger-log/ledger-log.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ledger-log/ledger-log.iml" afterDir="false" />
     </list>
-    <list id="e3e86558-de67-485d-a226-ee7930d3c82b" name="ignore" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_whvcse_easy_captcha_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__eu_bitwalker_UserAgentUtils_1_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bgee_log4jdbc_log4j2_log4jdbc_log4j2_jdbc4_1_1_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_7_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lionsoul_ip2region_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_jdk8_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_processor_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ledger-config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/ledger-common/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/ledger-config-server/target/" />
-    <ignored path="$PROJECT_DIR$/ledger-dao/target/" />
-    <ignored path="$PROJECT_DIR$/Ledger-service/target/" />
-    <ignored path="$PROJECT_DIR$/ledger-log/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list id="e3e86558-de67-485d-a226-ee7930d3c82b" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -380,255 +145,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/StringUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="471" column="5" selection-start-line="471" selection-start-column="5" selection-end-line="471" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/AuthRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/创建表sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-608">
-              <caret line="41" column="50" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Area.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Dict.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/DictDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/GlobalConfig.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="192" column="46" selection-start-line="192" selection-start-column="40" selection-end-line="192" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/ShiroUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/EncryptUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="98" column="26" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.2.RELEASE/reactor-core-3.2.2.RELEASE.jar!/reactor/core/Exceptions.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-912">
-              <caret line="46" column="67" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/handler/GlobalExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/Exceptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/Paginable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/Pagination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/SimplePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/service/sys/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/IBaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/impl/BaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/SearchParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/DataTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="947">
-              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-              <folding>
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/conditions/query/QueryWrapper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -673,289 +189,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/controller/LogController.java" />
-        <option value="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/aspect/SLogAspect.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/ServletUtils.java" />
-        <option value="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/annotation/Log.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/security/security/OnlineUser.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/annotation/AnonymousAccess.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/security/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/resources/mapper/sys/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/security/security/JwtAuthorizationTokenFilter.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/security/service/OnlineUserService.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/security/service/JwtUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/security/security/JwtUser.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/SlifeSysUser.java" />
-        <option value="$PROJECT_DIR$/ledger-log/src/main/java/com/ledger/aspect/SaveLogTask.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/SysUser.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/config/Global.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/Global.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/jwt/JwtProperties.java" />
-        <option value="$PROJECT_DIR$/ledger-common/pom.xml" />
-        <option value="$PROJECT_DIR$/Ledger-service/pom.xml" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/jwt/JwtTokenUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/sys/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Config.java" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Area.java" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/resources/templates/entity.java.ftl" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/request/AjaxRequest.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/request/PageRequest.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/BadRequestException.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/filter/AuthFilter.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/enums/HttpCodeEnum.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/AjaxResult.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/LedgerConstant.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/ReturnEntity.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/PageResult.java" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/User.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/service/sys/UserService.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/service/sys/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/DataTable.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/SearchParam.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/IBaseService.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/Exceptions.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/impl/BaseService.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/EncryptUtils.java" />
-        <option value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/ShiroUser.java" />
-        <option value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/AuthRealm.java" />
-        <option value="$PROJECT_DIR$/sql/创建表sql" />
-        <option value="$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\ideaWorkspace\LEDGER\.idea" />
+      </set>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="F:\repository" />
-        <option name="mavenHome" value="F:/java/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="F:\java\apache-maven-3.6.0\conf\settings.xml" />
+        <option name="mavenHome" value="E:/Java/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\Java\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ledger" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ledger" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1384" />
-    <option name="height" value="1047" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <hideEmptyPackages ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="Ledger-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ledger" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEDGER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEDGER" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1Uem7yCVOzKhCTm9WQ568UlZt7l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -964,13 +225,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -991,18 +252,6 @@
       <recent name="G:\JavaWorkSpace\GitWorkSpace\ReferenceProject\LEDGER\ledger-common\src\main\java\com\ledger\common\jwt" />
       <recent name="G:\JavaWorkSpace\GitWorkSpace\ReferenceProject\LEDGER\ledger-common\src\main\java\com\ledger\common" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.MyGenerator">
     <configuration name="MyGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1025,6 +274,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1038,6 +299,9 @@
       <updated>1575258874869</updated>
       <workItem from="1575258877430" duration="13776000" />
       <workItem from="1575336120778" duration="71186000" />
+      <workItem from="1575724031523" duration="122000" />
+      <workItem from="1575724179435" duration="1027000" />
+      <workItem from="1575725276875" duration="664000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交，新建common">
       <created>1575342992897</created>
@@ -1119,85 +383,6 @@
     <option name="localTasksCounter" value="12" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84962000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32924107" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32924107" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20647322" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3404018" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32924107" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32924107" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32924107" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.15401785" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3404018" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32924107" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -1211,6 +396,36 @@
     <MESSAGE value="修改自动生成的文件文件名" />
     <MESSAGE value="新增几个系统关键表" />
     <option name="LAST_COMMIT_MESSAGE" value="新增几个系统关键表" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1575726109803">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1575726109803" />
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1575726091965">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1575726091965" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1575726091965">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1575726091965" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1575726091964">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1575726091964" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1575726091965">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1575726091965" />
+    <state x="526" y="198" key="SettingsEditor" timestamp="1575725940689">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="526" y="198" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1575725940689" />
+    <state x="705" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1575725951722">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="705" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1575725951722" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1260,426 +475,6 @@
       </expression>
     </expressions>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/request/PageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/BadRequestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-538">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/enums/HttpCodeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1668#1669#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/AjaxResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="103" column="10" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#4354#4355#0" expanded="true" />
-            <element signature="e#4412#4413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/filter/AuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/util/DigestUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/sql/SqlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/LedgerConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/ReturnEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="170" column="26" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1975#1976#0" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#3504#3505#0" expanded="true" />
-            <element signature="e#3544#3545#0" expanded="true" />
-            <element signature="e#5322#5323#0" expanded="true" />
-            <element signature="e#5371#5372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/RedisCache.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/RedisCacheManager.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/CacheConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/credential/HashedCredentialsMatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/response/PageResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/SysUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/service/sys/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.2.0/mybatis-plus-extension-3.2.0.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="261" column="60" selection-start-line="261" selection-start-column="53" selection-end-line="261" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/conditions/interfaces/Compare.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/conditions/query/QueryWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/service/sys/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="471" column="5" selection-start-line="471" selection-start-column="5" selection-end-line="471" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/constant/SearchParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/entity/DataTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="947">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-          <folding>
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/IBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/handler/ApiError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/exception/handler/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/Paginable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/Pagination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/SimplePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/page/PageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/core/service/impl/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.2.RELEASE/reactor-core-3.2.2.RELEASE.jar!/reactor/core/Exceptions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912">
-          <caret line="46" column="67" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/EncryptUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="98" column="26" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/utils/Exceptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-common/src/main/java/com/ledger/common/shiro/ShiroUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ledger-service/src/main/java/com/ledger/config/shiro/AuthRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/GlobalConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="192" column="46" selection-start-line="192" selection-start-column="40" selection-end-line="192" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.2.0/mybatis-plus-annotation-3.2.0.jar!/com/baomidou/mybatisplus/annotation/IdType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/创建表sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-608">
-          <caret line="41" column="50" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/Dict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/DictDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/com/ledger/sys/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledger-dao/src/main/java/MyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
@@ -1696,6 +491,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1718,6 +514,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
