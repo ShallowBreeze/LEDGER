@@ -17,10 +17,10 @@ import org.springframework.data.redis.core.RedisTemplate;
 public class CacheConfig {
 
     @Bean()
-    @ConditionalOnProperty(prefix = "slife.shiro", havingValue = "ehcacheManager", name = "cacheManager")
+    @ConditionalOnProperty(prefix = "ledger.shiro", havingValue = "ehcacheManager", name = "cacheManager")
     public EhCacheManager ehCacheManager() {
         log.info("[CacheConfig#ehCacheManager] ---> init ehCacheManager");
-        CacheManager cacheManager = CacheManager.getCacheManager("slife");
+        CacheManager cacheManager = CacheManager.getCacheManager("ledger");
         EhCacheManager ehCacheManager = new EhCacheManager();
         ehCacheManager.setCacheManager(cacheManager);
         ehCacheManager.setCacheManagerConfigFile("classpath:cache/ehcache-shiro.xml");
@@ -28,7 +28,7 @@ public class CacheConfig {
     }
 
     @Bean
-    @ConditionalOnProperty(prefix = "slife.shiro", havingValue = "redisCacheManager", name = "cacheManager")
+    @ConditionalOnProperty(prefix = "ledger.shiro", havingValue = "redisCacheManager", name = "cacheManager")
     public RedisCacheManager redisCacheManager(RedisTemplate<String, String> redisTemplate) {
         log.info("[CacheConfig#redisCacheManager] ---> init redisCacheManager");
         return new RedisCacheManager(redisTemplate);

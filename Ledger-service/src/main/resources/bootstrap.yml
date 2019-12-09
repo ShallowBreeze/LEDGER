@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ledger
+  profiles:
+    active: company
+  cloud:
+    config:
+      profile: ${spring.profiles.active}
+      label: master
+      uri: http://127.0.0.1:9999/ledger-config
+  fastjson:
+
+logging:
+  path: F:\\logs

@@ -10,7 +10,7 @@ public interface SettingsConstants {
      * 应用相关
      */
     interface AppInfo {
-        String NAME = "slife";
+        String NAME = "ledger";
         String VERSION ="";
         String AUTHOR = "";
     }

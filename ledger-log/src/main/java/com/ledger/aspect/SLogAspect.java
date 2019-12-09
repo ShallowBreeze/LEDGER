@@ -72,10 +72,8 @@ public class SLogAspect {
      * @param e exception
      */
     @AfterThrowing(pointcut = "logPointCut()", throwing = "e")
-    public void logAfterThrowing(ProceedingJoinPoint joinPoint, Throwable e) throws Throwable {
+    public void logAfterThrowing(JoinPoint joinPoint, Throwable e) throws Throwable {
         long beginTime = System.currentTimeMillis();
-        // 执行方法
-        Object result = joinPoint.proceed();
         // 执行时长(毫秒)
         long time = System.currentTimeMillis() - beginTime;
 
@@ -85,7 +83,7 @@ public class SLogAspect {
         String ip = IpUtils.getIpAddr(request);
         Log log = new Log("ERROR");
         log.setMsg(ThrowableUtil.getStackTrace(e));
-        SaveLogTask saveLogTask = new SaveLogTask(joinPoint, time, ip,log);
+        SaveLogTask saveLogTask = new SaveLogTask((ProceedingJoinPoint) joinPoint, time, ip,log);
         //保存日志到数据库
         executor.execute(saveLogTask);
     }

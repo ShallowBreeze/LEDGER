@@ -1,5 +1,11 @@
-#配置数据源
 spring:
+#  cloud:
+#    config:
+#      #开发环境本地优先级最高
+#      allow-override: true
+#      override-none: true
+#      override-system-properties: true
+  #配置数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://10.128.52.48:3306/LEDGER?serverTimezone=GMT+8&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
@@ -23,15 +29,6 @@ spring:
       poolPreparedStatements: true
       maxOpenPreparedStatements: 100
 
-      # 配置监控统计拦截的filters
-      filters: stat
-      stat-view-servlet:
-        url-pattern: /druid/*
-        reset-enable: false
-
-      web-stat-filter:
-        url-pattern: /*
-        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
 
 logging:
   file:

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<!-- 从spring中读取配置 -->
-	<springProperty scope="context" name="logPath" source="logging.file.path"/>
+   <!-- 从spring中读取配置 -->
+	<springProperty scope="context" name="logPath" source="logging.path"/>
 	<springProperty scope="context" name="logLevel" source="logging.level"/>
-	<!--
+   <!--
        说明：
        1、日志级别及文件
            日志记录采用分级记录，级别与日志文件名相对应，不同级别的日志信息记录到不同的日志文件中
@@ -24,7 +24,7 @@
     <contextName>LEDGER</contextName>
     <property name="LOG_PATH" value="${logPath}" />
     <!--设置系统日志目录-->
-    <property name="APPDIR" value="LEDGER/config" />
+    <property name="APPDIR" value="LEDGER/service" />
 
     <!-- 日志记录器，日期滚动记录 -->
     <appender name="FILEERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -128,8 +128,11 @@
     <!-- 生产环境下，将此级别配置为适合的级别，以免日志文件太多或影响程序性能 -->
     <logger name="org.springframework" level="WARN" />
     <logger name="org.hibernate" level="WARN" />
-    <logger name="com.wms" level="INFO" />
+    <logger name="com.ledger" level="INFO" />
     <springProfile name="dev">
+    	<logger name="com.ledger" level="DEBUG" />
+    </springProfile>
+    <springProfile name="company">
     	<logger name="com.ledger" level="DEBUG" />
     </springProfile>
     
@@ -137,8 +140,12 @@
         <appender-ref ref="FILEERROR" />
         <appender-ref ref="FILEWARN" />
         <appender-ref ref="FILEINFO" />
-        <appender-ref ref="STDOUT" />
-		<springProfile name="company">
+
+		<springProfile name="dev">
+	        <!-- 生产环境将请stdout,testfile去掉 -->
+	        <appender-ref ref="STDOUT" />
+        </springProfile>
+        <springProfile name="company">
 	        <!-- 生产环境将请stdout,testfile去掉 -->
 	        <appender-ref ref="STDOUT" />
         </springProfile>

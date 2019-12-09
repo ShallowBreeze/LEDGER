@@ -24,14 +24,14 @@ spring:
       maxOpenPreparedStatements: 100
 
       # 配置监控统计拦截的filters
-      filters: stat
-      stat-view-servlet:
-        url-pattern: /druid/*
-        reset-enable: false
-
-      web-stat-filter:
-        url-pattern: /*
-        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+#      filters: stat
+#      stat-view-servlet:
+#        url-pattern: /druid/*
+#        reset-enable: false
+#
+#      web-stat-filter:
+#        url-pattern: /*
+#        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
 
 logging:
   file:
