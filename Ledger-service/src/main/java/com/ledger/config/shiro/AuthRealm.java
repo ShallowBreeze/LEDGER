@@ -47,9 +47,9 @@ public class AuthRealm extends AuthorizingRealm {
         if (user != null) {
             log.info("[AuthRealm#doGetAuthenticationInfo] --> {} login", user.getUserName());
 
-            byte[] salt = EncryptUtils.decodeHex(user.getUserPwd().substring(0, 16));
+            byte[] salt = EncryptUtils.decodeHex(user.getUserPwd());
             return new SimpleAuthenticationInfo(new ShiroUser(user.getUserId(),loginName, user.getUserName()),
-                    user.getUserPwd().substring(16), ByteSource.Util.bytes(salt),
+                    user.getUserPwd(), ByteSource.Util.bytes(salt),
                     getName());
         } else {
             log.error("[AuthRealm#doGetAuthenticationInfo] --> login error");
