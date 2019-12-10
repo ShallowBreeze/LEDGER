@@ -8,7 +8,7 @@ server:
 
 #MyBatis
 mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:/mapper/*.xml
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.ledger.entity
   global-config:

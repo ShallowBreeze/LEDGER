@@ -37,7 +37,7 @@ public class ConfigController {
     */
 
     @SLog("获取Config")
-    @PostMapping(value = "/list")
+    @GetMapping(value = "/list")
     @ResponseBody
     public DataTable<Config> list(@RequestBody DataTable dt, ServletRequest request) {
     return configService.pageSearch(dt);

@@ -5,7 +5,9 @@ import com.ledger.entity.User;
 import com.ledger.dao.UserDao;
 import com.ledger.service.sys.UserService;
 import com.ledger.common.core.service.impl.BaseService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -15,7 +17,9 @@ import org.springframework.stereotype.Service;
  * @author pz
  * @since 2019-12-07
  */
+@Slf4j
 @Service
+@Transactional(readOnly = true, rollbackFor = Exception.class)
 public class UserServiceImpl extends BaseService<UserDao, User> implements UserService {
 
     @Override

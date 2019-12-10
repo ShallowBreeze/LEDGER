@@ -37,7 +37,7 @@ public class DictDetailController {
     */
 
     @SLog("获取DictDetail")
-    @PostMapping(value = "/list")
+    @GetMapping(value = "/list")
     @ResponseBody
     public DataTable<DictDetail> list(@RequestBody DataTable dt, ServletRequest request) {
     return dictDetailService.pageSearch(dt);

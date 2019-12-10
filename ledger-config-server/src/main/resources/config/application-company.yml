@@ -8,9 +8,9 @@ spring:
   #配置数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.128.52.48:3306/LEDGER?serverTimezone=GMT+8&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://10.128.52.48:3306/LEDGER?serverTimeZone=GMT+8&characterEncoding=utf8&useSSL=false&rewriteBatchedStatements=true&zeroDateTimeBehavior=CONVERT_TO_NULL
     username: ledger
-    password: 123456
+    password: '123456'
     druid:
       validationQuery: SELECT 1
       # 初始化配置
@@ -32,4 +32,12 @@ spring:
 
 logging:
   file:
-    path: G:\\logs
+    path: F:\\logs
+
+# 文件存储路径
+file:
+  path: F:\ledger\file\
+  avatar: F:\ledger\avatar\
+  # 文件大小 /M
+  maxSize: 100
+  avatarMaxSize: 5

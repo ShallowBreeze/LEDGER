@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.128.52.48:3306/LEDGER?serverTimezone=GMT+8&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://10.128.52.48:3306/LEDGER?serverTimeZone=GMT+8&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: ledger
     password: 123456
     druid:
@@ -35,4 +35,4 @@ spring:
 
 logging:
   file:
-    path: G:\\logs
+    path: F:\\logs

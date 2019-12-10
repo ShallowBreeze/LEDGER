@@ -4,7 +4,9 @@ import com.ledger.entity.Area;
 import com.ledger.dao.AreaDao;
 import com.ledger.service.sys.AreaService;
 import com.ledger.common.core.service.impl.BaseService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -14,7 +16,9 @@ import org.springframework.stereotype.Service;
  * @author pz
  * @since 2019-12-07
  */
+@Slf4j
 @Service
+@Transactional(readOnly = true, rollbackFor = Exception.class)
 public class AreaServiceImpl extends BaseService<AreaDao, Area> implements AreaService {
 
 }

@@ -14,8 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @author: pengzhen@cmhit.com
  * @create: 2019-12-09 14:31
  **/
-@EnableAsync
-@SpringBootApplication(exclude={org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class})
+@SpringBootApplication
 @EnableTransactionManagement
 public class APPRun {
     private static final Logger logger = LoggerFactory.getLogger(APPRun.class);

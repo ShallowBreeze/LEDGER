@@ -4,7 +4,9 @@ import com.ledger.entity.Dict;
 import com.ledger.dao.DictDao;
 import com.ledger.service.sys.DictService;
 import com.ledger.common.core.service.impl.BaseService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -14,7 +16,9 @@ import org.springframework.stereotype.Service;
  * @author pz
  * @since 2019-12-07
  */
+@Slf4j
 @Service
+@Transactional(readOnly = true, rollbackFor = Exception.class)
 public class DictServiceImpl extends BaseService<DictDao, Dict> implements DictService {
 
 }

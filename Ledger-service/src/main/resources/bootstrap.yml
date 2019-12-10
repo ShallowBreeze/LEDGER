@@ -9,6 +9,8 @@ spring:
       label: master
       uri: http://127.0.0.1:9999/ledger-config
   fastjson:
+    date-format: yyyy-MM-dd HH:mm:ss
 
 logging:
-  path: F:\\logs
+  file:
+    path: F:\\logs

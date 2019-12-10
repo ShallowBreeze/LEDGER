@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
    <!-- 从spring中读取配置 -->
-	<springProperty scope="context" name="logPath" source="logging.path"/>
+	<springProperty scope="context" name="logPath" source="logging.file.path"/>
 	<springProperty scope="context" name="logLevel" source="logging.level"/>
    <!--
        说明：
@@ -140,7 +140,7 @@
         <appender-ref ref="FILEERROR" />
         <appender-ref ref="FILEWARN" />
         <appender-ref ref="FILEINFO" />
-
+        <appender-ref ref="STDOUT" />
 		<springProfile name="dev">
 	        <!-- 生产环境将请stdout,testfile去掉 -->
 	        <appender-ref ref="STDOUT" />

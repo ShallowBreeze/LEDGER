@@ -55,7 +55,7 @@ public class ${table.controllerName} {
     */
 
     @SLog("获取${entity}")
-    @PostMapping(value = "/list")
+    @GetMapping(value = "/list")
     @ResponseBody
     public DataTable<${entity}> list(@RequestBody DataTable dt, ServletRequest request) {
     return ${table.entityPath}Service.pageSearch(dt);

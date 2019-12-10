@@ -66,7 +66,7 @@ public class UserController {
     * @Date: 2019-12-07
     */
     @SLog("更新User")
-    @PostMapping(value = "/update")
+    @GetMapping(value = "/update")
     @ResponseBody
     public ReturnEntity update(@Validated @RequestBody User user) {
     userService.updateById(user);

@@ -66,9 +66,9 @@ public class ShiroConfig {
         bean.setSecurityManager(securityManager);
 
         // 配置登陆url
-        bean.setLoginUrl("/login");
+//        bean.setLoginUrl("/login");
         // 配置登陆成功url
-        bean.setSuccessUrl("/index");
+//        bean.setSuccessUrl("/index");
 
         // 配置访问权限
         bean.setFilterChainDefinitionMap(fillFilterChainDefinitionMap());
@@ -148,7 +148,7 @@ public class ShiroConfig {
 
         //注入缓存管理器;
         //注意:开发时请先关闭，如不关闭热启动会报错
-//        manager.setCacheManager(cacheManager);//这个如果执行多次，也是同样的一个对象;
+        manager.setCacheManager(authRealm.getCacheManager());//这个如果执行多次，也是同样的一个对象;
         //注入记住我管理器;
         manager.setRememberMeManager(rememberMeManager);
         log.info("[ShiroConfig#securityManager] ---> shiro已经加载");

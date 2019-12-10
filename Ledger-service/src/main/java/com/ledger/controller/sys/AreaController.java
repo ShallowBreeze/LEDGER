@@ -51,7 +51,7 @@ public class AreaController {
     * @Date: 2019-12-07
     */
     @SLog("新增Area")
-    @PostMapping(value = "/insert")
+    @GetMapping(value = "/insert")
     @ResponseBody
     public ReturnEntity create(@Validated @RequestBody Area area) {
     areaService.save(area);
